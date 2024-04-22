@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('users.json')
         .then(response => response.json())
         .then(data => {
-            if (data.length > 3) {
-                data = data.slice(data.length - 3);
+            if (data.length > 10) {
+                data = data.slice(data.length - 10);
             }
             displayUsers(data);
         })
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function displayUsers(users) {
     const usersContainer = document.getElementById('users-container');
-    users.forEach(user => {
+    users.reverse().forEach(user => {
         const userDiv = document.createElement('div');
         userDiv.classList.add('user');
 
