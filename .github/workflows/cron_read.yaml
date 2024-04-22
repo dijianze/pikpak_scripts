@@ -2,7 +2,7 @@ name: My CI
 
 on:
   schedule:
-    - cron: '30 5,17 * * *'
+    - cron: '* 1,13 * * *'
   workflow_dispatch: # 添加这行以允许手动触发
 
 jobs:
