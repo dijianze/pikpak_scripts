@@ -69,3 +69,25 @@ h2 {
 .copy-success.active {
     opacity: 1;
 }
+
+/* 定义链接的默认样式 */
+a {
+    color: #007bff;
+    /* 设置链接的默认颜色 */
+    text-decoration: none;
+    /* 移除下划线 */
+    transition: color 0.3s ease-in-out;
+    /* 平滑的颜色过渡效果 */
+    font-size: 50px;
+    /* 设置文字大小为20像素 */
+    font-weight: bold;
+    /* 设置文字为加粗 */
+}
+
+/* 定义鼠标悬停在链接上时的样式 */
+a:hover {
+    color: #0056b3;
+    /* 鼠标悬停时链接的颜色 */
+    text-decoration: underline;
+    /* 鼠标悬停时添加下划线 */
+}
