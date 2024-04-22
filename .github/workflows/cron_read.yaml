@@ -1,4 +1,4 @@
-name: My CI
+name: Scheduled Node.js CI
 
 on:
   schedule:
