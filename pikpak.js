@@ -524,7 +524,7 @@ class PikPak {
     const userData = {
     id: this.user_id,
     用户名: this.email,
-    密码: this.password, createTime:Date.now()
+    密码: this.password, createTime:new Date().toLocaleString()
   };
 
   // 读取或创建空的用户数组
